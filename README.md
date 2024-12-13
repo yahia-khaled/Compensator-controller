@@ -14,21 +14,13 @@ The challenge lies in determining the optimal parameters to meet these objective
 - Control System Toolbox
 - SISOtool
 
-## How to Run the Project
-1. Convert the control loop transfer function from the s-domain to the z-domain.
-2. Transform the transfer function from the z-domain to the w-domain to enable Bode plot and step response analysis.
-3. Plot the loop response without proportional gain.
-4. Add proportional gain, plot the new response, and observe changes in steady-state error and phase margin.
-5. Use the `get_pole_zero_for_lead_compensator` function to obtain initial pole-zero locations.
-6. Open SISOtool, input the pole-zero locations, and design the compensator.
-7. Tune the compensator to achieve the required phase margin.
-8. Plot the step response and Bode plot of the compensated system.
-
-## Example Output
-![Step Response](path/to/step_response_image.png)
-
-## Licensing
-This project is licensed under [MIT License](LICENSE).
-
-## Contact
-For questions or issues, please contact [your_email@example.com].
+# project code run procedure
+1. convert control loop transfer function from s-domain to z-domain
+2. convert control loop transfer function from z-domain to w-domain to enable view bode plot and step response
+3. plot loop response without adding proportional gain
+4. adding proportional gain to loop and plot new response, observe that error steady state is acheived but phase margin is lost.
+5. give function of `get_pole_zero_for_lead_compensator` to get initial values of pole-zero location that will be used in sisotool.
+6. open sisotool and use the provided zero-pole location for design compensator.
+7. tune the zero-pole location to get required phase margin.
+8. plot step response and get bode plot of control loop transfer function after adding compensator function obtained in sisotool.
+9. plot new step response and bode plot of control loop after including compensator in loop. 
