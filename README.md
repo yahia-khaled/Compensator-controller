@@ -5,7 +5,7 @@ given control loop we need to achieve specified error steady state, so it is req
 the challange is to select appropriate values for controller and proprtional gain to achieve required response.<br />
 # simulation tool and version
 projects run over matlab R2021a, using sisotool build in matlab that take control loop for design. <br />
-# how to use project code
+# project code run procedure
 1. convert control loop transfer function from s-domain to z-domain
 2. convert control loop transfer function from z-domain to w-domain to enable view bode plot and step response
 3. plot loop response without adding proportional gain
